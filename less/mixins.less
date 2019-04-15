@@ -1,33 +1,29 @@
 // Mixins Here
 
-.nav-default(){
+.flex-layout(@direction, @justify, @align){
     display: flex;
-    flex-direction: row;
-    font-size: 18px;
-    justify-content: space-around;
-    text-decoration: none;
-    color: black;
-    padding-bottom: 20px;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
 }
 
-.border-rounded(@size, @style, @color, @radius){
-    border:@size @style @color;
-    border-radius: @radius;
+.position-fixed(){
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
 }
 
-.btn-signup(){
-    background-color: @btn-bg-color;
-}
-
-.button-create(){
-    height: 40px;
-    width: 30%;
-    background-color: @ebony-clay;
-    .border-rounded(2px, solid, @ebony-clay, 15px);
-}
-
-.btn-text(){
-    font-size: 17px;
+.button-style()
+{
+     
+   width: 30%;
+    background: @btn-bg-color;
+    border-radius: 5px;
+    text-align: center;
     color: white;
-    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 3% 0%;
 }

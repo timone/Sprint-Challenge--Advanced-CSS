@@ -1,23 +1,19 @@
 // General Styles
 * {
   box-sizing: border-box;
+
 }
 
 html {
   font-size: 62.5%;
 }
 
-html,
-body {
+html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
 }
@@ -38,10 +34,8 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
-}
+  margin: 0 auto;  
+  padding-top: 130px;
 
-img {
-  height: auto;
-  width: 100%;
+  .flex-layout (column, center, space-around);
 }
