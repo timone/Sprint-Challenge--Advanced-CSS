@@ -10,11 +10,24 @@
     padding-bottom: 20px;
 }
 
+.border-rounded(@size, @style, @color, @radius){
+    border:@size @style @color;
+    border-radius: @radius;
+}
+
 .btn-signup(){
     background-color: @btn-bg-color;
 }
-.btn-text () {
+
+.button-create(){
+    height: 40px;
+    width: 30%;
+    background-color: @ebony-clay;
+    .border-rounded(2px, solid, @ebony-clay, 15px);
+}
+
+.btn-text(){
     font-size: 17px;
-    color:white;
+    color: white;
     font-weight: bold;
 }
