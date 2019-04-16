@@ -13,14 +13,12 @@
       padding:0 15px;
     }
   
-  
+
 
 } 
-
-
   .earth-image{
- 
       border-radius: 5px;
+      width: 100%;
   }
 
 
@@ -40,6 +38,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @phone{
+      .blast{
+        width: 100%;
+      }
+      .sky{
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -74,7 +83,7 @@
       }
 
       .btn {
-        .button-style;
+        .button-style();
       }
     }
 
@@ -87,6 +96,25 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+    @media @phone {
+      flex-layout(column-reverse, center, center);
+      padding: 2%;
+      margin: 0;
+      .walk-text{
+        width: 100%;
+        padding-top: 5%;
+        .btn{
+          width: 100%;
+          padding: 6%;
+          margin: 0 0 2% 0;
+        }
+      }
+      .walk-img {
+        margin: 3% 0 0 0;
+        width: 100%;
+      }
+      
     }
   }
 }// home
