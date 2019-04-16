@@ -7,6 +7,8 @@
         .flex-layout(column, center, space-around);
         text-align: center;
         background: @nav-bg;
+        padding: 17px 0;
+        opacity: 0.9;
 
         h1{
             font-size: 4rem;
@@ -19,6 +21,12 @@
             color:@nav-font;
             font-size: 1.5rem;
             padding: 2%;
+        }
+        @media @phone{
+            a{
+                padding: 2% 3.5%;
+                font-size: 1.75rem;
+            }
         }
 
         .earth{
