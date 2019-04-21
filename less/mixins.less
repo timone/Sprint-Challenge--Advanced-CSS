@@ -1,1 +1,32 @@
 // Mixins Here
+
+.flex-layout(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.position-fixed(){
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.button-style(){
+   width: @width;
+    background: @color;
+    border-radius: @border-radius;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    padding: 3% 0%;
+
+    &:hover{
+        color: green;
+        background: @btn-bg-color * 1.5;
+    }
+}
